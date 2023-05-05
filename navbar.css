@@ -1,0 +1,16 @@
+/* Global Elements */
+
+* {
+    outline: 1px dashed red;
+  }
+
+
+/* Nav Bar */
+
+.nav-right{
+    float: right;
+}
+
+.nav-left{
+    float: left;
+ }
