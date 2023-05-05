@@ -9,8 +9,25 @@
 
 .nav-right{
     float: right;
+    height: 110px
+    
 }
 
 .nav-left{
     float: left;
+    height: 110px
+    
  }
+
+ .u-nav {
+  background-color: blue;
+  padding: 20px;
+  border: 2px solid black;
+  color:aqua;
+  transform: skew(14deg);
+}
+
+/* Main */
+main {
+  margin-top: 7% ;
+}
