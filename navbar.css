@@ -1,31 +1,25 @@
-/* All */
- /* * {
-  box-sizing: border-box;
-  outline: dotted;
-  outline-color: red;
-}   */
-
-
-* {
-  box-sizing: border-box;
-  scroll-padding-top: 70px;
-}
-
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 70px;
 }
 
-/* Header/logo Title */
+
+
+
+
+
+/* Style the header */
 .header {
-  padding: 120px;
+  padding: 200px;
   text-align: center;
   color: white;
   font-size: 25px;
   background-color: #FF3CAC;
   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  color:black
+  color: black
 }
 
 /* Increase the font size of the heading */
@@ -34,38 +28,28 @@ body {
   color: white;
 }
 
-.header h2 {
-  font-size: 40px;
-  color: #D3D3D3;
-}
-
+/* Changes text color of bolded item in header */
 .header b {
-  color: #D3D3D3;
+  color: #06A77D;
 }
 
 
-dl dt {
-  color:white;
-  font-size:25px;
-}
 
- dl dd {
-  color:black;
-  font-size:20px;
-} 
 
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+
+
+/* Style the navbar */
 .navbar {
   overflow: hidden;
   background-color: #333;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-/* Style the navigation bar links */
+/* Style the navbar anchor */
 .navbar a {
   float: left;
   display: block;
@@ -75,46 +59,37 @@ dl dt {
   text-decoration: none;
 }
 
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
+/* Change color on hover on navbar anchors */
 .navbar a:hover {
   background-color: #06A77D;
-  
+
 }
 
-/* Active/current link */
 
 
 
-/* Column container */
+
+
+/* Style the main section */
 .row {
   display: -ms-flexbox;
-  /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap;
-  /* IE10 */
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-
-
-
-/* Main column */
+/* Main */
 .main {
   -ms-flex: 70%;
-  /* IE10 */
   flex: 70%;
   color: white;
   padding: 0px;
-  
+}
 
+/* Style the h2 tags in main, these are typically the Headers of the sections */
+.main h2 {
+  padding: 20px;
+  font-size: 30px;
 }
 
 /* Fake image, just for this example */
@@ -124,13 +99,25 @@ dl dt {
   padding: 20px;
 }
 
+/* Styles the List, DT is the first  */
+dl dt {
+  color: #06A77D;
+  font-size: 25px;
+  font-weight: bold;
+  text-indent: 20px;
+}
 
+/* Styles the List, DD is the second */
+dl dd {
+  color: black;
+  font-size: 20px;
+}
 
+/* The slants are the different sections, should look into just making 2 slants and alternate them */
 .slant1 {
   padding: 10px;
   background: linear-gradient(to bottom, #333, #7D83FF);
   border-bottom: 1px outset;
-  
 }
 
 .slant2 {
@@ -145,6 +132,10 @@ dl dt {
   border-bottom: 1px outset;
 }
 
+
+
+
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -152,6 +143,11 @@ dl dt {
   background: #ddd;
 }
 
+
+
+
+
+/* Style the different sized layouts */
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {
