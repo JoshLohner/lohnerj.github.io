@@ -1,14 +1,14 @@
 /* All */
-/* * {
+ /* * {
   box-sizing: border-box;
   outline: dotted;
   outline-color: red;
-}  */
+}   */
 
 
 * {
   box-sizing: border-box;
- 
+  scroll-padding-top: 70px;
 }
 
 /* Style the body */
@@ -46,22 +46,25 @@ body {
 
 dl dt {
   color:white;
-  font-size:30px;
-}
-
-dl dd {
-  color:black;
   font-size:25px;
 }
+
+ dl dd {
+  color:black;
+  font-size:20px;
+} 
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
   background-color: #333;
   position: sticky;
-  
+  position: -webkit-sticky;
   top: 0;
+  
 }
+
+
 
 /* Style the navigation bar links */
 .navbar a {
@@ -111,7 +114,7 @@ dl dd {
   flex: 70%;
   color: white;
   padding: 0px;
-  scroll-padding-top: 70px;
+  
 
 }
 
