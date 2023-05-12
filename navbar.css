@@ -3,6 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   box-sizing: border-box;
+  scroll-padding-top: 120px;
+}
+
+* {
   scroll-padding-top: 70px;
 }
 
@@ -15,11 +19,11 @@ body {
 .header {
   padding: 200px;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 25px;
   background-color: #FF3CAC;
   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  color: black
+  
 }
 
 /* Increase the font size of the heading */
@@ -31,6 +35,7 @@ body {
 /* Changes text color of bolded item in header */
 .header b {
   color: #06A77D;
+  font-size:30px;
 }
 
 
@@ -76,6 +81,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  
 }
 
 /* Main */
@@ -84,6 +90,7 @@ body {
   flex: 70%;
   color: white;
   padding: 0px;
+  
 }
 
 /* Style the h2 tags in main, these are typically the Headers of the sections */
@@ -92,11 +99,22 @@ body {
   font-size: 30px;
 }
 
+.contentbelow {
+  clear: both;
+}
+
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
+}
+
+.h2right {
+  float:right;
+  padding: 20px;
+  font-size: 30px;
+  
 }
 
 /* Styles the List, DT is the first  */
@@ -118,6 +136,7 @@ dl dd {
   padding: 10px;
   background: linear-gradient(to bottom, #333, #7D83FF);
   border-bottom: 1px outset;
+  
 }
 
 .slant2 {
