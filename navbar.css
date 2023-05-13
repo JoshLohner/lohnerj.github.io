@@ -171,7 +171,14 @@ dl dd {
   margin-right: 75px;
 }
 
+.manypara{
+  font-size: 20px;
+  padding-left: 160px;
+}
 
+.contentbelow strong {
+  font-size:25px;
+}
 
 /* The slants are the different sections, should look into just making 2 slants and alternate them */
 .slant1 {
